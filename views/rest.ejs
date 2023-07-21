@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/restlogo.png">
+    <title>Restaurant Roulette - Result</title>
+</head>
+<body class="font-nunito text-center w-full h-full bg-white bg-no-repeat bg-cover m-auto">
+    <header class="m-0 p-0 b-0 display-block bg-white absolute top-0 w-full leading-5 left-0 px-6 flex justify-between h-20 p-2">
+        <a href="/"><img class="float-left w-16" src="./images/restlogo.png" alt="Restaurant Roulette Logo"></a>
+        <!-- <h1>Restaurant Roulette</h1> -->
+        <nav>
+            <ul class="font-semibold">
+                <li class="list-none inline-block p-2.5"><a class="no-underline text-black block text-right hover:text-gray-500 m-0" href="/">Home</a></li>
+                <!-- <li class="nav-link"><a href="#">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <section class="mt-16 bg-[url('/images/surround-food.jpg')] bg-no-repeat bg-[length:3000px] bg-center">
+        <section class="w-full m-auto h-[1000px] p-2.5">
+            <!-- <img class="logo" src="/images/restlogo.png" alt="Restaurant Roulette"> -->
+            <h2 class="mb-1 mt-0.5 pt-5">Restaurant</h2>
+            <h2 class="mt-0 text-[#A41629] text-2xl"><%= restaurant.name %></h2>
+            <h2 class="mt-4 mb-1>Rating"></h2>
+            <section class="flex flex-row justify-center">
+                <% if (restaurant.rating === 5) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                <% } else if (restaurant.rating === 4.5) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star-half-stroke"></i></div>
+                <% } else if (restaurant.rating === 4) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class="fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                <% } else if (restaurant.rating === 3.5) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star-half-stroke"></i></div>
+                <% } else if (restaurant.rating === 3) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                <% } else if (restaurant.rating === 2.5) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star-half-stroke"></i></div>
+                <% } else if (restaurant.rating === 2) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class=" fa-solid fa-star"></i></div>
+                <% } else if (restaurant.rating === 1.5) { %>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class="fa-solid fa-star"></i></div>
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class="fa-solid fa-star-half-stroke"></i></div>
+                <% } else if (restaurant.rating === 1) { %> 
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class="fa-solid fa-star"></i></div>
+                <% } else if (restaurant.rating === .5) { %> 
+                    <div class="p-0.5 text-2xl text-[#A41629]"><i class="fa-solid fa-star-half-stroke"></i></div>
+                <% } %>
+            </section>
+            <section>
+                <h2 class="mb-1.5 mt-5">Address</h2>
+                <h4 class="m-0 text-myRed text-xl"><%= restaurant.location.display_address %></h4>
+                <h4 class="text-[#a41629] text-xl my-2.5"><%= restaurant.display_phone %></h4>
+                <div><a class="text-[#899b0e] text-center p-2.5 hover:text-[#feaf14]" href="<%= restaurant.url %>">More Information</a></div>
+                <img class="w-96 mb-2.5 rounded-sm m-auto p-2.5 pb-5" src="<%= restaurant.image_url %>">
+                
+            </section>
+            
+            <section class="mb-5 mt-2.5">
+                <button class="bg-[#899b0e] border-none text-white cursor-pointer text-base py-3 px-5 rounded-sm m-2 mb-2.5" onClick="window.location.reload();">Spin Again</button>
+                <button class="bg-[#899b0e] border-none text-white cursor-pointer text-base py-3 px-5 rounded-sm m-2 mb-2.5"><a class="text-white" href="/">Start Over</a></button>
+            </section>
+        </section>
+
+        <footer class="bg-[#830d1c] text-white text-center w-full h-[200px] pt-5 flex-grow-1">
+            <h2 class="p-1.5 text-2xl">Contact</h2>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.twitter.com/codingmypath"><i class="fa-brands fa-twitter"></i></a>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.instagram.com/codingmypath"><i class="fa-brands fa-instagram"></i></a>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.linkedin.com/in/eherrera09/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.github.com/codingmypath"><i class="fa-brands fa-github"></i></a>
+                <p class="p-4 py-5 bottom-0">&copy; 2023 - Edgar Herrera </p>
+        </footer>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Restaurant Roulette</title>
+    <link rel="icon" type="image/x-icon" href="./images/restlogo.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class=" font-nunito text-center w-full h-full bg-white bg-no-repeat bg-cover m-auto">
+    <!-- <div class="bg-emerald-500 w-52 h-52 rounded-full shadow-2xl"></div> -->
+        <header class="m-0 p-0 b-0 display-block bg-white absolute top-0 w-full leading-5 left-0 px-6 flex justify-between h-20 p-2">
+            <a href="/"><img class="float-left w-16" src="./images/restlogo.png" alt="Restaurant Roulette Logo"></a>
+            <!-- <h1>Restaurant Roulette</h1> -->
+            <nav>
+                <ul class="font-semibold">
+                    <li class="list-none inline-block p-2.5"><a class="no-underline text-black block text-right hover:text-gray-500" href="/">Home</a></li>
+                    <!-- <li class="nav-link"><a class="nav" href="#">Contact</a></li> -->
+                </ul>
+            </nav>
+        </header>
+    <section class="w-full flex flex-col mt-20 mx-auto my-0">
+        <section class="sm:h-[500px] bg-[url('../images/toast.jpg')] bg-no-repeat bg-cover bg-center h-[450px] bg-white p-20 text-black">
+            <!-- <img class="logo" src="/images/restlogo.png" alt="Restaurant Roulette"> -->
+            <h1 class="text-5xl mr-0 pl-[35rem]">FIND YOUR NEXT FAVORITE MEAL IN SECONDS!</h1>  
+            <h3 class="p-1 pl-[35rem] text-xl">We pick the restaurant when you are having trouble deciding where to go eat!</h3>
+        </section>
+        <section class="bg-contain bg-right bg-no-repeat bg-[#ebe9ec] pt-8 p-5 bg-[url('../images/coffee1.png')]">
+            <form class="w-full text-center m-auto rounded-smp pt-8 h-[625px]" action="/selection" method="GET">
+                <h3 class="p-1 text-xl">Location</h3>
+                    <input class="rounded-md border-[1px] border-black text-md/[17px] mb-8" id="city" type="text" name="cityInput" placeholder="Zip or City & State" required>
+            
+                <h3 class="mt-7 p-1 text-xl">Price</h3>
+                <section class="flex flex-row justify-center flex-wrap">
+                    <label class="m-2.5">
+                        <input class="peer hidden" id="price" type="radio" value=1 name="price" required oninvalid="alert('You must fill out the form!');">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white w-[75px] p-2 rounded hover:bg-[#feaf14] checked:text-white peer-checked:bg-[#feaf14]">
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" id="price" type="radio" value=2 name="price">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white w-[75px] p-2 rounded hover:bg-[#feaf14] checked:text-white peer-checked:bg-[#feaf14]">
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden checked:text-white checked:bg-[#feaf14]" id="price" type="radio" value=3 name="price">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white w-[75px] p-2 rounded hover:bg-[#feaf14] peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" id="price" type="radio" value=4 name="price">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white w-[75px] p-2 rounded hover:bg-[#feaf14] peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                            <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                        </div>
+                    </label>
+                    
+                    <label class="m-2.5 ">
+                        <input class="peer hidden checked:text-white checked:bg-[#feaf14]" id="price" type="radio" value=1,2,3,4 name="price">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white w-[75px] p-2 rounded hover:bg-[#feaf14] peer-checked:text-white peer-checked:bg-[#feaf14]">
+                        <p class="m-0 text-base font-bold">All</p>
+                        </div>
+                    </label>
+                </section>
+            
+                <h3 class="p-1 mt-5 text-xl">Categories</h3>
+                <section class="flex flex-wrap justify-center max-w-xl m-auto">
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="mexican" name="category" required oninvalid="alert('You must fill out the form!');">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">Mexican</p>
+                            </div>
+                    </label>
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="mediterranean" name="category">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">Mediterranean</p>
+                            </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="sushi" name="category">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">Sushi</p>
+                            </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="pizza" name="category">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">Pizza</p>
+                            </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="korean" name="category">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">Korean</p>
+                            </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="coffee" name="category">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">Coffee</p>
+                            </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="burgers" name="category">
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">Burger</p>
+                            </div>
+                    </label>
+            
+                    <label class="m-2.5">
+                        <input class="peer hidden" type="radio" value="food" name="category" checked>
+                        <div class="cursor-pointer bg-[#C42B1C] text-white p-2 rounded hover:bg-[#feaf14] w-120 peer-checked:text-white peer-checked:bg-[#feaf14]">
+                            <p class="radioInputText">None</p>
+                            </div>
+                    </label>
+                </section>
+            
+                <br>
+                <input class="c-white bg-[#899b0e] border-none cursor-pointer text-md/[17px] rounded-[3px] m-1.5 px-5 py-2 mb-2 hover:bg-[#718109]" type="submit" value="Submit">
+                </form>
+        </section>
+    
+        
+    
+    
+        <footer class="bg-[#830d1c] text-white text-center w-full h-[200px] pt-5 flex-grow-1">
+            <h2 class="p-1.5 text-2xl">Contact</h2>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.twitter.com/codingmypath"><i class="fa-brands fa-twitter"></i></a>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.instagram.com/codingmypath"><i class="fa-brands fa-instagram"></i></a>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.linkedin.com/in/eherrera09/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="text-[#dfad2c] text-4xl p-2 pb-[5px] hover:cursor-pointer hover:text-[#FF7039]" href="https://www.github.com/codingmypath"><i class="fa-brands fa-github"></i></a>
+                <p class="p-4 py-5 bottom-0">&copy; 2023 - Edgar Herrera </p>
+        </footer>
+    </section>
+    
+    </body>
+</html>

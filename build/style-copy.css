@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+body {
+    /* text-align: center; */
+    background: #F2DD6E;
+    /* background: white; */
+    /* background-image: url("./images/food3.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    background-position: 25% 330%;
+    /* margin: auto; */
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+/* .logo {
+    width: 255px;
+    margin: auto;
+} */
+
+.restImg {
+    width: 390px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+
+button, .button {
+    /* border: none; */
+    /* color: white; */
+    /* background: #899b0e; */
+    /* cursor: pointer; */
+    /* font-size: 17px; */
+    /* padding: 12px 20px; */
+    /* border-radius: 3px; */
+    /* margin: 7px; */
+    /* margin-bottom: 10px; */
+}
+
+button:hover, .button:hover {
+    /* background: #718109; */
+}
+
+
+/* Restaurant Input  */
+.whole {
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin-top: 4.5em; */
+}
+
+#city {
+    /* border-radius: 3px;
+    border: 1px solid black;
+    font-size: 17px;
+    margin-bottom: 10px; */
+}
+
+h3 {
+    /* margin: 5px; */
+}
+
+#priceSection {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; */
+}
+
+.priceHeader {
+    /* margin-top: 25px; */
+}
+
+.radioLabel {
+    /* margin: 10px;                    QUESTIONABLE */
+}
+
+.radioLabel > input {
+    /* display: none; */
+}
+
+.radioButtons {
+    /* cursor: pointer; */
+    /* background: #A41629; */
+    /* background: #C42B1C; */
+    /* color: white; */
+    /* padding: 10px; */
+    /* width: 75px; Questionable */
+    /* border-radius: 3px; */
+}
+
+input:checked + .radioButtons {
+    /* color: white;
+    background: #feaf14; */
+}
+
+.radioInputAll {
+    /* margin: 0; */
+    /* font-size: 17px; */
+    /* font-weight: bold; */
+}
+
+.radioButtons:hover {
+    /* background: #feaf14; */
+}
+
+.categoryHeader {
+    /* margin-top: 20px; */
+}
+
+.foodType {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* max-width: 650px; */
+    /* margin: auto; */
+}
+
+.categoryButtons {
+    /* width: 120px; */
+}
+
+form {
+    /* height: 625px; */
+}
+.randomButtons {
+    cursor: pointer;
+    background: #A41629;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+input:checked + .randomButtons {
+    color: white;
+    background: #feaf14;
+}
+
+/* Restaurant Given */
+.restaurantHeader {
+    /* margin-bottom: 5px;
+    margin-top: 2px;
+    padding-top: 15px; */
+}
+
+.restaurantName {
+    /* font-size: 25px;
+    margin-top: 0px;
+    color: #A41629; */
+}
+
+.rating {
+    /* margin-top: 15px;
+    margin-bottom: 5px; */
+}
+
+.ratingNum {
+    margin: 0;
+}
+
+.starRating {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+
+.fa-star, .fa-star-half-stroke {
+    padding: 2px;
+    font-size: 25px;
+    color: #A41629;
+}
+
+.addressHeader {
+    /* margin-bottom: 5px;
+    margin-top: 15px; */
+}
+.restaurantLocation {
+    /* margin: 0px;
+    color: #A41629;
+    font-size: 20px; */
+}
+
+.restaurantNumber {
+    /* color: #A41629; */
+    /* font-size: 20px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.url {
+    /* color:#899b0e; */
+    font-size: 17px;
+    /* text-align: center; */
+    /* padding: 10px; */
+}
+
+.url:hover {
+    /* color:#feaf14; */
+}
+
+.startOver {
+    /* color: white; */
+    text-decoration: none;
+}
+
+.resultButtons {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    /* background:#477999; */
+    /* background:#830d1c; */
+    /* color: white; */
+    /* text-align: center; */
+    /* width: 100%; */
+    /* height: 200px; */
+    /* margin-top: 55px; */
+    /* padding-top: 20px; */
+    /* flex-grow: 1; */
+}
+
+.social-links {
+    /* color:#b4e1ff; */
+    /* color:rgb(247, 152, 45); */
+    /* color: #dfad2c; */
+    /* font-size: 35px; */
+    /* padding: 10px; */
+    /* padding-bottom: 5px; QUESTIONABLE */
+}
+
+/* #title-footer {
+    padding: 5px;
+} */
+
+.social-links:hover {
+    /* cursor: pointer; */
+    /* color:#FF7039; */
+}
+
+#copyright-footer {
+    /* padding: 15px; */
+    /* padding-top: 25px; */
+    /* bottom: 0; */
+}
+
+header {
+    /* margin: 0; */
+	/* padding: 0; */
+	/* border: 0; */
+	font-size: 100%;
+    /* display: block; */
+}
+
+#header {
+    /* background-color: #ffffff; */
+	/* height: 3.5em; */
+	/* left: 0; */
+	/* line-height: 3.5em; */
+	/* padding: 0 1.25em; */
+	/* position: absolute; */
+	/* top: 0; */
+	/* width: 100%; */
+	z-index: 10000;
+}
+
+
+/* #header h1 {                         NOT ADDED 
+    border-bottom: 0;
+	font-size: 2em;
+	margin-bottom: 0;
+} */
+
+
+.welcome {
+    /* background-image: url("./images/toast.jpg"); */
+    /* background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) ), url('./images/toast.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    /* background-position: center; */
+    /* padding: 5em; */
+    /* margin: 0 0 5em 0; */
+    /* background-color: #ffffff; */
+    /* height: 450px; */
+
+}
+
+/* .welcome h1 {
+    margin: right;
+} */
+
+
+.formSection {
+    /* background-image: url('./images/coffee1.png'); */
+    /* background-size: contain; */
+    /* background-position: right; */
+    /* background-repeat: no-repeat; */
+    /* padding-top: 5em; */
+    /* background-color: #ebe9ec; */
+    /* background-image: 100%; */
+    /* background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/coffee.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; */
+    /* padding: 15px; */
+}
+
+form {
+    /* border: 1px solid rgb(138, 137, 137); */
+    /* width: 100%; */
+    /* text-align: center; */
+    /* margin: auto; */
+    /* box-shadow: 1px 2px 5px rgb(170, 170, 170); */
+    /* background: rgb(240, 240, 240); */
+    /* border-radius: 5px; */
+    /* padding-top: 25px; */
+}
+
+
+.welcome {
+    /* color: black; */
+}
+
+.welcome h1 {
+    /* font-size: 50px;
+    padding-left: 575px; */
+}
+
+.welcome h3 {
+    /* padding-left: 575px; */
+}
+
+header {
+    /* display: flex; */
+    /* padding: 10px; */
+    /* justify-content: space-between; */
+    /* height: 70px; */
+}
+
+.restLogo {
+    /* width: 70px;
+    float: left; */
+}
+
+.all-links {
+    /* font-weight: 600; */
+}
+
+.nav-link {
+    /* list-style-type: none;
+    display: inline-block;
+    padding: 10px; */
+}
+.nav-link a {
+    /* text-decoration: none; */
+    /* color: black; */
+    /* display: block; */
+    /* text-align: right; */
+}
+
+.nav:hover {
+    color: #C42B1C;
+}
+
+
+@media screen and (max-width: 1360px) {
+    .formSection {
+         background: rgb(236, 236, 236);
+    } 
+ 
+    .welcome h1, .welcome h3 {
+     padding-left: 450px;
+    }
+}
+
+
+@media screen and (max-width: 1236px) {
+    .formSection {
+         background: rgb(236, 236, 236);
+    } 
+ 
+    .welcome h1, .welcome h3 {
+     padding-left: 350px;
+    }
+}
+
+
+
+@media screen and (max-width: 1036px) {
+    .formSection {
+         background: rgb(236, 236, 236);
+    } 
+ 
+    .welcome h1, .welcome h3 {
+     padding-left: 250px;
+    }
+
+    .welcome h1 {
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+}
+
+
+@media screen and (max-width: 736px) {
+
+    .welcome {
+        background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(252, 250, 250, 0.3)), url('./images/toast.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 3em;
+        height: 500px;
+        
+    }
+
+   .formSection {
+        background: rgb(236, 236, 236);
+   } 
+
+   .welcome h1, .welcome h3 {
+    padding-left: 0px;
+   }
+}
+
+
+.restInfo {
+    background-image: url("./images/surround-food.jpg");
+    background-repeat: no-repeat;   
+    background-position: center; 
+    background-size: 3000px;
+    background-color: #ebe9ec;
+    width: 100%;
+    height: 1000px;
+}
+
+.insideRestInfo {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    height: 950px;
+}
