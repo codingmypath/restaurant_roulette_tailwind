@@ -26,7 +26,7 @@
     <section class="mt-16 bg-[url('/images/surround-food.jpg')] bg-no-repeat bg-[length:3000px] bg-center">
         <section class="w-full m-auto h-[1000px] p-2.5">
             <!-- <img class="logo" src="/images/restlogo.png" alt="Restaurant Roulette"> -->
-            <h2 class="mb-1 mt-0.5 pt-5">Restaurant</h2>
+            <h2 class="font-semibold text-xl mb-1 mt-0.5 pt-5">Restaurant</h2>
             <h2 class="mt-0 text-[#A41629] text-2xl"><%= restaurant.name %></h2>
             <h2 class="mt-4 mb-1>Rating"></h2>
             <section class="flex flex-row justify-center">
@@ -73,8 +73,8 @@
                 <% } %>
             </section>
             <section>
-                <h2 class="mb-1.5 mt-5">Address</h2>
-                <h4 class="m-0 text-myRed text-xl"><%= restaurant.location.display_address %></h4>
+                <h2 class="mb-1.5 mt-5 font-semibold text-xl">Address</h2>
+                <h4 class="text-[#a41629] m-0 text-myRed text-xl"><%= restaurant.location.display_address %></h4>
                 <h4 class="text-[#a41629] text-xl my-2.5"><%= restaurant.display_phone %></h4>
                 <div><a class="text-[#899b0e] text-center p-2.5 hover:text-[#feaf14]" href="<%= restaurant.url %>">More Information</a></div>
                 <img class="w-96 mb-2.5 rounded-sm m-auto p-2.5 pb-5" src="<%= restaurant.image_url %>">

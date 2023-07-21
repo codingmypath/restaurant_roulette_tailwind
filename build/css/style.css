@@ -706,6 +706,10 @@ video {
   height: 100%;
 }
 
+.w-120 {
+  width: 120px;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -806,24 +810,19 @@ video {
   background-color: rgb(196 43 28 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#ebe9ec\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 233 236 / var(--tw-bg-opacity));
+}
+
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ebe9ec\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 233 236 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/images\/toast\.jpg\'\)\] {
@@ -834,8 +833,8 @@ video {
   background-image: url('/images/surround-food.jpg');
 }
 
-.bg-\[url\(\'\.\.\/images\/coffee1\.png\'\)\] {
-  background-image: url('../images/coffee1.png');
+.bg-mobile-back {
+  background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(252, 250, 250, 0.3)), url('../images/toast.jpg');
 }
 
 .bg-\[length\:3000px\] {
@@ -931,10 +930,6 @@ video {
   padding-bottom: 5px;
 }
 
-.pl-\[35rem\] {
-  padding-left: 35rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -960,14 +955,14 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base {
@@ -977,6 +972,11 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -1079,4 +1079,35 @@ video {
 .peer:checked ~ .peer-checked\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:h-\[500px\] {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:pl-\[20rem\] {
+    padding-left: 20rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:bg-\[url\(\'\.\.\/images\/coffee1\.png\'\)\] {
+    background-image: url('../images/coffee1.png');
+  }
+
+  .xl\:bg-\[url\(\'\.\.\/images\/toast\.jpg\'\)\] {
+    background-image: url('../images/toast.jpg');
+  }
+
+  .xl\:pl-\[35rem\] {
+    padding-left: 35rem;
+  }
 }
